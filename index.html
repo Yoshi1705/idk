@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Simple Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my simple webpage!</h1>
+        <p id="para">Hello, World!</p>
+        <button onclick="changeText()">Click me</button>
+    </div>
+
+    <script>
+        function changeText() {
+            document.getElementById('para').innerText = 'You clicked the button!';
+        }
+    </script>
+</body>
+</html>
